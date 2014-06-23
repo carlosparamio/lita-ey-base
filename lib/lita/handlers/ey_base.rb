@@ -47,9 +47,14 @@ module Lita
       end
 
       def can_access?(user, app, env)
+        return true if ey_admin?(user)
         group = required_group_to_access(app, env)
         return true unless group
         Lita::Authorization.user_in_group? user, required_group_to_access(app, env)
+      end
+
+      def ey_admin?(user)
+        Lita::Authorization.user_in_group? user, "ey_admins"
       end
 
       def access_denied_msg

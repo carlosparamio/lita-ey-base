@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-ey-base"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Carlos Paramio"]
   spec.email         = ["cparamio@avallain.com"]
   spec.description   = %q{A Lita base handler with shared code for all ey-lita-* gems.}

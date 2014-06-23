@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lita-ey-base (0.0.1)
+    lita-ey-base (0.0.2)
       engineyard
       lita (>= 3.2.0)
 
